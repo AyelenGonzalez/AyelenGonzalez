@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color:darkgoldenrod;
+    background-image: url("../Imágenes/sivawall.jpg");
+    display: grid;
+    background-size: content;
+    background-repeat: no-repeat;
+    grid-template-rows: 1fr 2fr auto;
+    grid-template-areas: "header"
+                          "." 
+                          "footer";
+    }
+
+.other__body{
+    background-color: darkgoldenrod;
+    background-image: url("../Imágenes/sivawall.jpg");
+    display: grid;
+    background-size: content;
+    background-repeat: no-repeat;
+    grid-template-rows: 0.5fr 3fr auto;
+    grid-template-areas: "header"
+                          "main" 
+                          ".";
+    grid-row-gap: 1rem;
+}
+
+.events__body{
+    background-color: #756213;
+    background-image: linear-gradient(315deg, #756213 0%, #000000 74%);
+    background-image: url("../Imágenes/sivawall.jpg");
+    display: grid;
+    background-size: content;
+    background-repeat: no-repeat;
+    grid-template-columns: 2*1fr;
+    grid-template-rows: 4*1fr;
+    grid-template-areas: "header header"
+                         "section section"
+                         "main main"
+                         "aside aside";
+    grid-row-gap: 1rem;                     
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.other__header{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.events__header{
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__title{
+    margin-top: 1rem;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.header__item{
+    font-family: fantasy;
+    text-shadow: 1px 2px darkslategray;
+}
+
+.header__item--color{
+    color: gold;
+}
+.header__item--color:hover{
+    color: whitesmoke;
+    text-shadow: black;
+}
+.events__title{
+    grid-area: section;
+    display: flex;
+}
+
+.events__subt{
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+    text-decoration-line: underline;
+    align-self: center;
+    max-width: 310px;
+    text-align: center;
+}
+
+.events__main{
+    grid-area: main;
+}
+
+.events__text{
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.events__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+    font-size: 1rem;
+    text-decoration-line: underline;
+    gap: 0.5rem;
+}
+
+.events__logo{
+    align-self: center;
+    justify-self: center;
+    border: gold;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: medium;
+    box-shadow: 1px 2px darkslategray;
+}
+
+.events__gallery{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.events__video{
+    width: 250px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.events__img{
+    width: 150px;
+    height: 100px;
+    border-radius: 1rem;
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.aboutme__text{
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.aboutme__gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aboutme__img{
+    border-radius: 1rem;
+}
+
+.aboutme__imgn{
+    border: gold;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: medium;
+    box-shadow: 1px 2px darkslategray;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main__title{
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+    text-decoration-line: underline;
+    align-self: center;
+}
+
+.main__clases{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3*1fr;
+    grid-gap: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.main__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.main__itema{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.main__img{
+    width: 120px;
+    height: 70px;
+    border: gold;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: medium;
+    box-shadow: 1px 2px darkslategray;
+}
+
+.main__subt{
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+    font-size: 0.8rem;
+    text-align: center;
+    max-width: 190px;
+}
+
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer__list{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.footer__item{
+    display: flex;
+    align-content: center;
+}
+
+.footer__link{
+    display: flex;
+    align-content: center;
+}
+
+.footer__logo{
+    align-self: center;
+    justify-self: center;
+    border: gold;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: medium;
+    box-shadow: 1px 2px darkslategray;
+}
+
+.footer__form{
+    border: gold;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: medium;
+    box-shadow: 1px 2px darkslategray;
+}
+
+.footer__table{
+    padding: 0.5rem;
+}
+
+.footer__label{
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+}
+
+.footer__button{
+    background-color: transparent;
+    border: gold;
+    border-style: double;
+    border-width: thin;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+}
+
+.footer__button:hover{
+    background-color: darkslategray;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px darkslategray;
+    cursor: pointer;
+}
+
+.footer__place{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__adress{
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px black;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .body {
+        background-image: url("../Imágenes/sivawallpaper.jpg");
+        background-size: cover;
+        grid-template-rows: 1fr auto 1fr;
+    }
+    .other__body{
+        background-image: url("../Imágenes/sivawallpaper.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }   
+    .events__body{
+        background-image: url("../Imágenes/sivawallpaper.jpg");
+        background-size: cover;
+        grid-template-areas: "header header"
+                             "section section"
+                             "main aside"
+                             "main aside";
+        grid-gap: 3rem;
+    }
+    .other__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+    .events__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+    .events__title{
+        justify-content: center;
+    }
+    .events__subt{
+        font-size: 3rem;
+        max-width: none;
+        text-align: center;
+    }
+    .events__main{
+        margin-left: 1rem;
+    }
+    .events__ref{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .events__text{
+        font-size: 1.5rem;
+    }
+    .events__link{
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    .events__video{
+        width: 500px;
+        height: 250px;
+        border: gold;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: medium;
+    box-shadow: 1px 2px darkslategray;
+    }
+    .events__img{
+        width: 240px;
+        height: 150px;
+        border: gold;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: medium;
+    box-shadow: 1px 2px darkslategray;
+    }
+    .header__title{
+        font-size: 6rem;
+    }
+    .other__nav{
+        align-self: flex-start;
+        margin-right: 0.5rem;
+    }
+    .header__list{
+        font-size: 2rem;
+        gap: 3rem;
+    }
+    .main__clases{
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        padding: 0.5rem;
+        height: 520px;
+    }
+    .main__item{
+        align-self: flex-start;
+        text-align: center;
+        align-items: center;
+    }
+    .main__itema{
+        display: flex;
+        align-self: flex-end;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__img{
+        width: 300px;
+        height: 200px;
+    }
+    .main__subt{
+        font-size: 1.5rem;
+        max-width: 180px;
+        text-align: center;
+    }
+    .aboutme{
+        gap: 15rem;
+    }
+    .aboutme__text{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .aboutme__gallery{
+        flex-direction: row;
+        gap: 15rem;
+    }
+    .aboutme__img{
+        border: gold;
+        border-radius: 1rem;
+        border-style: double;
+        border-width: medium;
+        box-shadow: 1px 2px darkslategray;
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        border-color: gold;
+        box-shadow: 1px 2px black;
+        border-style: double;
+        border-radius: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        position: fixed;
+        bottom: 0;
+        width: 98%;
+        justify-self: center;
+    }
+    .footer__list{
+        flex-direction: column;
+        gap: 2rem;
+        margin: 00.5rem;
+    }
+    .footer__form{
+        font-size: 1.5rem;
+    }
+    .footer__input{
+        font-size: 1rem;
+    }
+    .footer__button{
+        font-size: 1rem;
+    }
+    .footer__place{
+        flex-direction: row;
+        margin: 00.5rem;
+    }
+}
