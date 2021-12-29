@@ -9,7 +9,76 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 
-<body>
+<body class="bg-image" style="background-image: url(./Imágenes/sivawallpaper.jpg); height: 100vh; background-position: center center ;background-repeat: no-repeat; background-size: cover;"></bodyclass>
+   
+    <header class="container-fluid mt-5">
+        <div class="row">
+            <h1 class="header__title">Yoga Shambhava</h1>
+        </div>
+        <nav class="row navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: gold; box-shadow: 1px 2px black;">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse container justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link header__item" style="color: gold;text-decoration-line: underline;" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link header__item" style="color: gold;text-decoration-line: underline;" href="./Pages/las_clases.html">Las clases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link header__item" style="color: gold;text-decoration-line: underline;" href="./Pages/eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link header__item" style="color: gold;text-decoration-line: underline;" href="./Pages/sobre_mi.html">Sobre mi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Contacto
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <footer style="position: fixed; bottom: 1vh; width: 98vw;">
+        <section class="container-fluid d-flex justify-content-around">
+            <a col-lm-12 href="">
+                <img class="img-fluid footer__logo" src="./Imágenes/instagramlogo.png" alt="">
+            </a>
+            <a href="">
+                <img class="img-fluid footer__logo" src="./Imágenes/584ac2d03ac3a570f94a666d.png" alt="">
+            </a>
+            <a href="">
+                <img class="img-fluid footer__logo" src="./Imágenes/png-transparent-whatsapp-logo-whatsapp-computer-icons-facebook-icono-whatsapp-red-social-de-flat-gradient-social-icons-miscellaneous-text-logo-thumbnail.png" alt="">
+            </a>
+        </section>
+        
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

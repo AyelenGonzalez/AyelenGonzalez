@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header__title{
+    font-size: 8vh;
+    text-align: center;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px black;
+}
+
+.header__item{
+    font-size: 4vh;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px black;
+}
+
+.footer__logo{
+    border-radius: 7px;
+    border-color: gold;
+    border-style: double;
+    box-shadow: 1px 2px black;
+}
+
+.footer__logo:hover{
+    border-color: goldenrod;
+}
