@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 
-<body class="bg-image" style="background-image: url(./Imágenes/sivawallpaper.jpg); height: 100vh; background-position: center center ;background-repeat: no-repeat; background-size: cover;"></bodyclass>
+<body class="bg-image container-fluid d-flex flex-column align-items-center" style="background-image: url(./Imágenes/sivawallpaper.jpg); height: 100vh; background-position: center center ;background-repeat: no-repeat; background-size: cover; background-color: dimgray;">
    
-    <header class="container-fluid mt-5">
+    <header class="container-fluid mt-4">
         <div class="row">
             <h1 class="header__title">Yoga Shambhava</h1>
         </div>
@@ -23,7 +23,7 @@
               <div class="collapse navbar-collapse container justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link header__item" style="color: gold;text-decoration-line: underline;" href="./index.html">Inicio</a>
+                    <a class="nav-link header__item" style="color: gold;text-decoration-line: underline;" hover="color: goldenrod;" href="./index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link header__item" style="color: gold;text-decoration-line: underline;" href="./Pages/las_clases.html">Las clases</a>
@@ -40,7 +40,7 @@
           </nav>
     </header>
 
-    <section>
+    <section style="min-height: 50vh;" class="container-fluid d-flex justify-content-center align-items-end section__index">
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Contacto
           </button>
@@ -52,33 +52,47 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form action="">
-
-                  </form>
+                    <table>         
+                        <form action="#" method="get">
+                             <tr class="form__row"">
+                                 <td><label for="name">Nombre</label></td>
+                                 <td><input type="text" name="name" id="name" placeholder="Introduzca su nombre"></td>  
+                             </tr>    
+                             <tr class="form__row">
+                                 <td><label for="email">E-mail</label></td>
+                                 <td><input type="email" name="email" id="email" placeholder="Introduzca su e-mail"></td>
+                             </tr>  
+                             <tr class="form__row--buttons">
+                                <td><input class="btn btn-secondary" type="reset" value="Borrar"></td>
+                                <td><input class="btn btn-primary" type="submit" value="Enviar"></td>
+                             </tr>         
+                         </form>
+                     </table>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Enviar</button>
                 </div>
               </div>
             </div>
           </div>
     </section>
     
-    <footer style="position: fixed; bottom: 1vh; width: 98vw;">
-        <section class="container-fluid d-flex justify-content-around">
-            <a col-lm-12 href="">
-                <img class="img-fluid footer__logo" src="./Imágenes/instagramlogo.png" alt="">
-            </a>
-            <a href="">
-                <img class="img-fluid footer__logo" src="./Imágenes/584ac2d03ac3a570f94a666d.png" alt="">
-            </a>
-            <a href="">
-                <img class="img-fluid footer__logo" src="./Imágenes/png-transparent-whatsapp-logo-whatsapp-computer-icons-facebook-icono-whatsapp-red-social-de-flat-gradient-social-icons-miscellaneous-text-logo-thumbnail.png" alt="">
-            </a>
-        </section>
-        
+    <footer class="footer" style="width: 98vw; margin-top: 1vh;">  
+              <div class="footer__social">
+                  <a href="">
+                      <img class="img-fluid footer__logo" src="./Imágenes/instagramlogo.png" alt="">
+                  </a>
+                  <a href="">
+                      <img class="img-fluid footer__logo" src="./Imágenes/584ac2d03ac3a570f94a666d.png" alt="">
+                  </a>
+                  <a href="">
+                      <img class="img-fluid footer__logo" src="./Imágenes/png-transparent-whatsapp-logo-whatsapp-computer-icons-facebook-icono-whatsapp-red-social-de-flat-gradient-social-icons-miscellaneous-text-logo-thumbnail.png" alt="">
+                  </a>
+              </div>
+              <div class="footer__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0656010252933!2d-58.48886838477173!3d-34.55189438047291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6eb45ea34a3%3A0x1427d522319b6ff!2sBesares%204041%2C%20C1430%20CHM%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1640795347064!5m2!1ses-419!2sar" width="310" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+</bodyclass>
 </html>
