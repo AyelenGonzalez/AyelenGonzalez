@@ -40,44 +40,44 @@
           </nav>
     </header>
 
-    <section style="min-height: 53vh;" class="container-fluid d-flex justify-content-center align-items-end section__index">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <section style="min-height: 255px;" class="container-fluid d-flex justify-content-center align-items-end">
+          <button style="background-color: transparent; color: gold; border-color: gold; text-shadow: 1px 2px black; font-family: fantasy; box-shadow: 1px 2px black;" type="button" class="btn btn-primary modal__start" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Contacto
           </button>
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div style="background-color: black;" class="modal-header">
+                  <h5 style="color: gold; font-family: fantasy; text-shadow: 1px 2px black;" class="modal-title" id="exampleModalLabel">Contacto</h5>
+                  <button type="button" class="btn-close modal__x" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div style="background-color: gray;" class="modal-body">
                     <table>         
                         <form action="#" method="get">
                              <tr class="form__row"">
-                                 <td><label for="name">Nombre</label></td>
+                                 <td><label class="modal__label" for="name">Nombre</label></td>
                                  <td><input type="text" name="name" id="name" placeholder="Introduzca su nombre"></td>  
                              </tr>    
                              <tr class="form__row">
-                                 <td><label for="email">E-mail</label></td>
+                                 <td><label class="modal__label" for="email">E-mail</label></td>
                                  <td><input type="email" name="email" id="email" placeholder="Introduzca su e-mail"></td>
                              </tr>  
                              <tr class="form__row--buttons">
-                                <td><input class="btn btn-secondary" type="reset" value="Borrar"></td>
-                                <td><input class="btn btn-primary" type="submit" value="Enviar"></td>
+                                <td><input class="btn btn-secondary modal__button modal__start" type="reset" value="Borrar"></td>
+                                <td><input style="background-color: black;" class="btn btn-primary modal__button modal__start" type="submit" value="Enviar"></td>
                              </tr>         
                          </form>
                      </table>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div style="background-color: black;" class="modal-footer">
+                  <button type="button" class="btn btn-secondary modal__button modal__start" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
     </section>
     
-    <footer class="footer" style="width: 98vw; margin-top: 1vh;">  
+    <footer class="footer d-flex flex-wrap" style="width: 98vw; margin-top: 1vh;">  
               <div class="footer__social">
                   <a href="">
                       <img class="img-fluid footer__logo" src="./Imágenes/instagramlogo.png" alt="">
