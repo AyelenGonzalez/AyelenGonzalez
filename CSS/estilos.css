@@ -105,6 +105,16 @@
     text-shadow: black !important;
 }
 
+.section__text{
+    font-size: 2.5vh;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 1px 2px black;
+    text-indent: 10px;
+    margin-top: 2vh;
+    text-align: center;
+}
+
 .form__row{
     display: flex;
     flex-direction: column;
@@ -150,6 +160,9 @@
     .main__video{
         width: 454px;
         height: 258px;
+    }
+    .section__text{
+        font-size: 2vh;
     }
     .form{
         display: flex;
