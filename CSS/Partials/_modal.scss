@@ -1,0 +1,38 @@
+@import "./variables";
+
+.modal__start:hover{
+    border-color: $color-hover !important;
+    color: $color-hover !important;
+}
+
+.modal__x{
+    background-color: $color-main !important;
+    
+    &:hover{
+        background-color: $color-hover !important;
+    }
+}
+.modal__row{
+    display: flex;
+    flex-direction: column;
+    
+    .modal__label{
+        width: 50px;
+        font-family: $fantasy;
+        color: $color-main;
+        text-shadow: $shadow;
+    }
+}
+
+.modal__buttons{
+    display: flex;
+    
+    .modal__button{
+        font-family: $fantasy;
+        color: $color-main;
+        text-shadow: $shadow;
+        border-color: $color-main;
+    }
+}
+
+

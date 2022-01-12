@@ -1,0 +1,22 @@
+@import "./variables";
+
+.header__title{
+    font-size: 8vh;
+    text-align: $text-center;
+    font-family: $fantasy;
+    color: $color-main;
+    text-shadow: $shadow;
+}
+
+.header__item{
+    font-size: 4vh;
+    font-family: $fantasy;
+    color: $color-main;
+    text-shadow: $shadow;
+    
+    &:hover{
+        color: $color-hover !important;
+        text-decoration-color: $color-hover !important;
+        text-shadow: $shadow !important;
+    }
+}

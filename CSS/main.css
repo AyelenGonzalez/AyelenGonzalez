@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__title {
+  font-size: 8vh;
+  text-align: center;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+}
+
+.header__item {
+  font-size: 4vh;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+}
+
+.header__item:hover {
+  color: goldenrod !important;
+  -webkit-text-decoration-color: goldenrod !important;
+          text-decoration-color: goldenrod !important;
+  text-shadow: 1px 2px black !important;
+}
+
+.modal__start:hover {
+  border-color: goldenrod !important;
+  color: goldenrod !important;
+}
+
+.modal__x {
+  background-color: gold !important;
+}
+
+.modal__x:hover {
+  background-color: goldenrod !important;
+}
+
+.modal__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__row .modal__label {
+  width: 50px;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+}
+
+.modal__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__buttons .modal__button {
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+  border-color: gold;
+}
+
+.main__title {
+  text-align: center;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+}
+
+.main__item {
+  text-align: center;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+}
+
+.main__item:hover {
+  color: goldenrod !important;
+  -webkit-text-decoration-color: goldenrod !important;
+          text-decoration-color: goldenrod !important;
+  text-shadow: 1px 2px black !important;
+}
+
+.main__subtitle {
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.main__text {
+  font-size: 2.5vh;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+  text-indent: 10px;
+}
+
+.main__video {
+  width: 270px;
+  height: 163px;
+}
+
+.main__link {
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.main__link:hover {
+  color: goldenrod !important;
+  -webkit-text-decoration-color: goldenrod !important;
+          text-decoration-color: goldenrod !important;
+  text-shadow: 1px 2px black !important;
+}
+
+.section__text {
+  font-size: 2.5vh;
+  font-family: fantasy;
+  color: gold;
+  text-shadow: 1px 2px black;
+  text-indent: 10px;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1vh;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__social .footer__logo {
+  border-radius: 7px;
+  border-color: gold;
+  border-style: double;
+  -webkit-box-shadow: 1px 2px black;
+          box-shadow: 1px 2px black;
+}
+
+.footer__social .footer__logo:hover {
+  border-color: goldenrod;
+}
+
+.footer__map {
+  padding: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 751px) {
+  .main__title {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .main__video {
+    width: 454px;
+    height: 258px;
+  }
+  .section__text {
+    font-size: 2vh;
+  }
+  .modal__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5vh;
+  }
+  .modal__buttons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer {
+    position: fixed;
+    bottom: 1vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */

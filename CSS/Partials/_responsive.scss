@@ -1,0 +1,35 @@
+@media screen and (min-width: 751px) {
+    .main__title{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    .main__video{
+        width: 454px;
+        height: 258px;
+    }
+
+    .section__text{
+        font-size: 2vh;
+    }
+
+    .modal__row{
+        flex-direction: row;
+        gap: 5vh;
+    }
+
+    .modal__buttons{
+        justify-content: flex-end;
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 1vh;
+        flex-direction:row;
+        justify-content: space-between;
+        
+        &__social{
+            flex-direction: column;
+        }
+    }
+}
