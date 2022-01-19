@@ -7,17 +7,18 @@
 
 .header__title {
   font-size: 8vh;
-  text-align: center;
-  font-family: fantasy;
   color: gold;
   text-shadow: 1px 2px black;
+  font-family: fantasy;
+  text-align: center;
 }
 
 .header__item {
   font-size: 4vh;
-  font-family: fantasy;
   color: gold;
   text-shadow: 1px 2px black;
+  font-family: fantasy;
+  text-align: center;
 }
 
 .header__item:hover {
@@ -52,9 +53,10 @@
 
 .modal__row .modal__label {
   width: 50px;
-  font-family: fantasy;
   color: gold;
   text-shadow: 1px 2px black;
+  font-family: fantasy;
+  text-align: center;
 }
 
 .modal__buttons {
@@ -64,24 +66,32 @@
 }
 
 .modal__buttons .modal__button {
-  font-family: fantasy;
   color: gold;
   text-shadow: 1px 2px black;
+  font-family: fantasy;
+  text-align: center;
   border-color: gold;
 }
 
-.main__title {
-  text-align: center;
-  font-family: fantasy;
+.main__title, .main__item, .main__subtitle, .main__text, .main__link {
   color: gold;
   text-shadow: 1px 2px black;
+  font-family: fantasy;
+  text-align: center;
 }
 
 .main__item {
-  text-align: center;
-  font-family: fantasy;
-  color: gold;
-  text-shadow: 1px 2px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1vh;
 }
 
 .main__item:hover {
@@ -92,18 +102,12 @@
 }
 
 .main__subtitle {
-  font-family: fantasy;
-  color: gold;
-  text-shadow: 1px 2px black;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 .main__text {
   font-size: 2.5vh;
-  font-family: fantasy;
-  color: gold;
-  text-shadow: 1px 2px black;
   text-indent: 10px;
 }
 
@@ -113,11 +117,7 @@
 }
 
 .main__link {
-  text-align: center;
   font-size: 2.5vh;
-  font-family: fantasy;
-  color: gold;
-  text-shadow: 1px 2px black;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
@@ -131,11 +131,11 @@
 
 .section__text {
   font-size: 2.5vh;
-  font-family: fantasy;
-  color: gold;
-  text-shadow: 1px 2px black;
   text-indent: 10px;
   margin-top: 2vh;
+  color: gold;
+  text-shadow: 1px 2px black;
+  font-family: fantasy;
   text-align: center;
 }
 
@@ -181,7 +181,7 @@
 }
 
 @media screen and (min-width: 751px) {
-  .main__title {
+  .main__title, .main__item, .main__subtitle, .main__text, .main__link {
     margin-top: 5vh;
     margin-bottom: 5vh;
   }

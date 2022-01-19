@@ -13,14 +13,11 @@
     }
 }
 .modal__row{
-    display: flex;
-    flex-direction: column;
+    @include column;
     
     .modal__label{
         width: 50px;
-        font-family: $fantasy;
-        color: $color-main;
-        text-shadow: $shadow;
+        @include font;
     }
 }
 
@@ -28,9 +25,7 @@
     display: flex;
     
     .modal__button{
-        font-family: $fantasy;
-        color: $color-main;
-        text-shadow: $shadow;
+        @include font;
         border-color: $color-main;
     }
 }

@@ -1,9 +1,8 @@
 @import "./variables";
 
 .footer{
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
+    @include column;
+    gap: map-get($sizes, xs);
     
     &__social{
         display: flex;
@@ -22,7 +21,7 @@
     }
     
     &__map{
-        padding: 1vh;
+        padding: map-get($sizes, xs);
         display: flex;
         justify-content: center;
     }

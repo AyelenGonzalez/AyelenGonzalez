@@ -1,18 +1,13 @@
 @import "./variables";
 
 .header__title{
-    font-size: 8vh;
-    text-align: $text-center;
-    font-family: $fantasy;
-    color: $color-main;
-    text-shadow: $shadow;
+    font-size: map-get($sizes, xxl);
+    @include font;
 }
 
 .header__item{
-    font-size: 4vh;
-    font-family: $fantasy;
-    color: $color-main;
-    text-shadow: $shadow;
+    font-size: map-get($sizes, l);
+    @include font;
     
     &:hover{
         color: $color-hover !important;

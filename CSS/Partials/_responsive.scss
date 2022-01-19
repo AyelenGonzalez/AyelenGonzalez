@@ -1,7 +1,7 @@
 @media screen and (min-width: 751px) {
     .main__title{
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: map-get($sizes, xl);
+        margin-bottom: map-get($sizes, xl);
     }
     
     .main__video{
@@ -10,12 +10,12 @@
     }
 
     .section__text{
-        font-size: 2vh;
+        font-size: map-get($sizes, s);
     }
 
     .modal__row{
         flex-direction: row;
-        gap: 5vh;
+        gap: map-get($sizes, xl);
     }
 
     .modal__buttons{
@@ -24,7 +24,7 @@
 
     .footer{
         position: fixed;
-        bottom: 1vh;
+        bottom: map-get($sizes, xs);
         flex-direction:row;
         justify-content: space-between;
         

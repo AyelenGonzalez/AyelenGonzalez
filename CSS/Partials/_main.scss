@@ -1,17 +1,14 @@
 @import "./variables";
 
 .main__title{
-    text-align: $text-center;
-    font-family: $fantasy;
-    color: $color-main;
-    text-shadow: $shadow;
+    @include font;
 }
 
 .main__item{
-    text-align: $text-center;
-    font-family: $fantasy;
-    color: $color-main;
-    text-shadow: $shadow;
+    @include column;
+    align-items: center;
+    gap: map-get($sizes, xs);
+    @extend .main__title;
     
     &:hover{
         color: $color-hover !important;
@@ -21,17 +18,13 @@
 }
 
 .main__subtitle{
-    font-family: $fantasy;
-    color: $color-main;
-    text-shadow: $shadow;
+    @extend .main__title;
     text-decoration-line: underline;
 }
 
 .main__text{
-    font-size: 2.5vh;
-    font-family: $fantasy;
-    color: $color-main;
-    text-shadow: $shadow;
+    font-size: map-get($sizes, m);
+    @extend .main__title;
     text-indent: 10px;
 }
 
@@ -41,11 +34,8 @@
 }
 
 .main__link{
-    text-align: $text-center;
-    font-size: 2.5vh;
-    font-family: $fantasy;
-    color: $color-main;
-    text-shadow: $shadow;
+    @extend .main__title;
+    font-size: map-get($sizes, m);
     text-decoration-line: underline;
     
     &:hover{
